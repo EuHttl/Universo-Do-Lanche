@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="shortcut icon" href="assets/favicons/hamburguer.png" type="image/x-icon">
+
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +13,12 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./styles/output.css">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Universo do Lanche">
+
+<meta property="og:site_name" content="Universo-Do-Lanche">
 
 <title>Universo do Lanche</title>
 
@@ -20,168 +28,71 @@
 <!-- HEADER -->
 <header class="w-full h-[420px] bg-zinc-900 bg-fundo bg-cover bg-center">
 <div class="w-full h-full flex flex-col justify-center items-center">
-<img src="/assets/hamb-1.png" 
+<img src="/assets/Universo (1).png" 
 alt="Logo"
 class="w-32 h-32 rounded-full shadow-lg hover:scale-110">
 <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Universo do Lanche</h1>
 
-<span class="text-white font-medium">RUA DA Camila</span>
+<span class="text-white font-medium">Rua frança Nº1 - Itanhaem</span>
 
 <div class="bg-blue-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-<span class="text-white font-medium">Seg a Dom - 08:00 as 23:00</span>
+<span class="text-white font-medium">Ter a Dom - 18:00 as 00:00</span>
 </div>
 </div>
 </header>
-<!-- FIM DO HEADER -->
+
 
 <h2 class="text-2xl md:text-3xl font-bold text-center mt-10 mb-10 underline">
 Conheça o cardápio
 </h2>
 
-<!-- Inicio do Menu -->
+
 <div id="menu">
 
-<main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+<main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-11 mx-auto max-w-7xl px-2 mb-16 ">
 
-<!-- Produto -->
 <div class="flex gap-2">
-<img src="./assets/hamb-1.png" 
-alt="Hamburguer Smash"
+<img src="./assets/images/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg" 
+alt="Hot Dog"
 class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
 <div>
-    <p class="font-bold">Primeiro Lanche</p>
-    <p class="text-sm">Descrição do Produto</p>
+<p class="font-bold">Hot Dog Simples</p>
+<p class="text-sm">Pão, 1 salsicha, Maionese, Ketchup, Mostarda, Batata-palha, Pure</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$</p>
+    <button 
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="Hot Dog simples"
+    data-price="18.90">
+
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flex gap-2">
+    <img src="./assets/images/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg"
+    alt="Segundo lanche"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+    
+<div>
+    <p class="font-bold">Hot Dog Bacon</p>
+    <p class="text-sm">Pão, 1 Salsicha, Maionese, Ketchup, Mostarda, Batata-palha, Bacon, Pure, Queijo cheddar, Queijo catupiry, Vinagrete</p>
     
     
     <div class="flex items-center gap-2 justify-between mt-3">
-        <p class="font-bold text-lg">R$ preço</p>
-        <button 
-        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-        data-name="Lanche-1"
-        data-price="18.90">
-
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </div>
-
-</div>
-
-</div>
-<!-- Fim Produto -->
-
-<!-- Produto 2 -->
-<div class="flex gap-2">
-        <img src="./assets/hamb-2.png"
-        alt="Segundo lanche"
-        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-        >
-        
-    <div>
-        <p class="font-bold">Segundo Lanche</p>
-        <p class="text-sm">Descrição do Produto</p>
-        
-        
-        <div class="flex items-center gap-2 justify-between mt-3">
-        <p class="font-bold text-lg">R$ preço</p>
-        <button
-            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-name="Lanche-2"
-            data-price="18.90">
-        
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </div>
-
-</div>
-
-</div>
-<!-- Fim Produto 2 -->
-
-<!-- Produto 3 -->
-<div class="flex gap-2">
-        <img src="./assets/hamb-3.png"
-        alt="Segundo lanche"
-        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-        >
-        
-    <div>
-    <p class="font-bold">Terceiro Lanche</p>
-        <p class="text-sm">Descrição do Produto</p>
-        
-        
-        <div class="flex items-center gap-2 justify-between mt-3">
-        <p class="font-bold text-lg">R$ preço</p>
-        <button
-            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-name="Lanche-3"
-            data-price="20">
-        
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </div>
-
-</div>
-
-</div>
-<!-- Fim Produto 3 -->
-
-<!-- Produto 4 -->
-<div class="flex gap-2">
-        <img src="./assets/hamb-4.png"
-        alt="Segundo lanche"
-        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-        >
-        
-    <div>
-    <p class="font-bold">4 Lanche</p>
-        <p class="text-sm">Descrição do Produto</p>
-        
-        
-        <div class="flex items-center gap-2 justify-between mt-3">
-        <p class="font-bold text-lg">R$ preço</p>
-        <button
-            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-            data-name="Lanche-4"
-            data-price="20">
-        
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-    </div>
-
-</div>
-
-</div>
-<!-- Fim Produto 4-->
-
-</main>
-
-<div class="mx-auto max-w-7xl px-2 my-2">
-<h2 class="font-bold text-3xl">
-    Bebidas
-</h2>
-</div>
-
-<!-- Grid de Bebidas -->
-<div class= "grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
-
-<div class="flex gap-2 w-full">
-    <img src="./assets/refri-1.png"
-    alt="Bebidas"
-    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-    >
-    
-<div class="w-full">
-<p class="font-bold">1 Bebida</p>
-    <p class="text-sm">Descrição do Produto</p>
-    
-    
-    <div class="flex items-center gap-2 justify-between mt-3">
-    <p class="font-bold text-lg">R$ preço</p>
+    <p class="font-bold text-lg">R$</p>
     <button
         class="bg-gray-900 px-5 rounded add-to-cart-btn"
-        data-name="bebida"
-        data-price="10">
+        data-name="Lanche-2"
+        data-price="18.90">
     
     <i class="fa fa-cart-plus text-lg text-white"></i>
     </button>
@@ -192,32 +103,420 @@ class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 </div>
 
 
+<div class="flex gap-2">
+    <img src="./assets/images/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg"
+    alt="terceiro lanche"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    >
+    
+<div>
+<p class="font-bold">Hot Dog Calabresa</p>
+    <p class="text-sm">Pão, 1 Salsicha, Maionese, Mostarda, Batata-palha, Calabresa, Purê, Queijo cheddar, Queijo catupiry, Vinagrete</p>
+    
+    
+    <div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$</p>
+    <button
+        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+        data-name="Lanche-3"
+        data-price="20">
+    
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flex gap-2">
+    <img src="./assets/images/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg"
+    alt="quarto lanche"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    >
+    
+<div>
+<p class="font-bold">Hot Dog Completo</p>
+    <p class="text-sm">Pão, 2 Salsicha, Maionese, Ketchup, Mostarda, Batata-palha, Purê, Queijo cheddar, Queijo catupiry, Calabresa, Bacon, Vinagrete</p>
+    
+    
+    <div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$</p>
+    <button
+        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+        data-name="Lanche-4"
+        data-price="20">
+    
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+</div>
+
+</div>
+
+</div>
+
+
+</main>
+
+<div class="mx-auto max-w-7xl px-2 my-2">
+<h2 class="font-bold text-3xl">
+    Batatas
+</h2>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
 <div class="flex gap-2 w-full">
-<img src="./assets/refri-2.png"
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita pequena</p>
+<p class="text-sm">250g</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+<div class="flex gap-2 w-full">
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita Média</p>
+<p class="text-sm">500g</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+<div class="flex gap-2 w-full">
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita Grande</p>
+<p class="text-sm">800g</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="flex gap-2 w-full">
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita completa pequena</p>
+<p class="text-sm">Batata frita 200g, Acompanha: Bacon, Catupiry, Cheddar</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+<div class="flex gap-2 w-full">
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita completa média</p>
+<p class="text-sm">Batata frita 500g, Acompanha: Bacon, Catupiry, Cheddar</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+<div class="flex gap-2 w-full">
+<img src="./assets/images/batata-frita.jpg"
+alt="Batatas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Batata frita completa grande</p>
+<p class="text-sm">Batata frita 800g, Acompanha: Bacon, Catupiry, Cheddar</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="batata-frita"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<!-- Bebidas -->
+<div class="mx-auto max-w-7xl px-2 my-2">
+<h2 class="font-bold text-3xl">
+Bebidas
+</h2>
+</div>
+
+<h3 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">Latas</h3>
+
+<div class= "grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+<div class="flex gap-2 w-full">
+<img src="./assets/images/refri-1.png"
+alt="Bebidas"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Coca-Cola</p>
+<p class="text-sm">350ml</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+<p class="font-bold text-lg">R$</p>
+<button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="bebida"
+    data-price="10">
+
+<i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="flex gap-2 w-full">
+<img src="./assets/images/fanta-uva.jpg"
 alt="refri"
 class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
 >
 
 <div class="w-full">
-    <p class="font-bold">2 Bebida</p>
-    <p class="text-sm">Descrição do Produto</p>
+<p class="font-bold">Fanta Uva</p>
+<p class="text-sm">350ml</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$</p>
+    <button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="Lanche-4"
+    data-price="8">
     
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+</div>
+
+</div>
+
+<div class="flex gap-2 w-full">
+<img src="./assets/images/fanta-laranja.jpg"
+alt="refri"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+>
+
+<div class="w-full">
+<p class="font-bold">Fanta Laranja</p>
+<p class="text-sm">350ml</p>
+
+
+<div class="flex items-center gap-2 justify-between mt-3">
+    <p class="font-bold text-lg">R$</p>
+    <button
+    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+    data-name="Fanta-lata"
+    data-price="8">
     
-    <div class="flex items-center gap-2 justify-between mt-3">
-        <p class="font-bold text-lg">R$ preço</p>
-        <button
-        class="bg-gray-900 px-5 rounded add-to-cart-btn"
-        data-name="Lanche-4"
-        data-price="8">
+    <i class="fa fa-cart-plus text-lg text-white"></i>
+</button>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<h3 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">Refrigerantes 2L</h3>
+
+<div class= "grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+<div class="flex gap-2 w-full">
+    <img src="./assets/images/coca-2l.jpg"
+    alt="refri"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    >
+    
+    <div class="w-full">
+        <p class="font-bold">Coca-Cola 2L</p>
+        <p class="text-sm"></p>
         
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
-</div>
-</div>
+        
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$</p>
+            <button
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="coca-2l"
+            data-price="8">
+            
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+    </div>
+    
+    </div>
+<div class="flex gap-2 w-full">
+    <img src="./assets/images/fanta-2l.jpg"
+    alt="refri"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+    
+    <div class="w-full">
+        <p class="font-bold">Fanta Laranja 2L</p>
+        <p class="text-sm"></p>
+        
+        
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$</p>
+            <button
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Fanta Laranja-2L"
+            data-price="8">
+            
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+    </div>
+    
+    </div>
+<div class="flex gap-2 w-full">
+    <img src="./assets/images/fanta-uva-2l.jpg"
+    alt="refri"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    >
+    
+    <div class="w-full">
+        <p class="font-bold">Fanta Uva</p>
+        <p class="text-sm"></p>
+        
+        
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$</p>
+            <button
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Fanta Uva -2L"
+            data-price="8">
+            
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+    </div>
+    
+    </div>
+<div class="flex gap-2 w-full">
+    <img src="./assets/images/dolly-guarana.png"
+    alt="refri"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    >
+    
+    <div class="w-full">
+        <p class="font-bold">Dolly Guaraná</p>
+        <p class="text-sm"></p>
+        
+        
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$</p>
+            <button
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Dolly"
+            data-price="8">
+            
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+    </div>
+    
+    </div>
+
 
 </div>
 
-</div>
 <!-- Fim Grid de Bebidas -->
 
 </div>
@@ -228,46 +527,43 @@ class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
 class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" 
 id="cart-modal">
 <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-    <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+<h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
 
-    <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+<div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
-    <p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+<p class="font-bold">Total: <span id="cart-total">0,00</span></p>
 
-    <p class="font-bold mt-4">Endereço de Entrega:</p>
+<p class="font-bold mt-4">Endereço de Entrega:</p>
 
-    <input type="text"
-    placeholder="Digite seu endereço"
-    id="address"
-    class="w-full border-2 p-1 rounded my-1"
-    >
-    <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!</p>
+<input type="text"
+placeholder="Digite seu endereço"
+id="address"
+class="w-full border-2 p-1 rounded my-1"
+>
+<p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!</p>
 
-    <div class="flex items-center justify-between mt-5 w-full">
-        <button id="close-modal-btn">Fechar</button>
-        <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar Pedido</button>
-    </div>
-
+<div class="flex items-center justify-between mt-5 w-full">
+    <button id="close-modal-btn">Fechar</button>
+    <button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar Pedido</button>
 </div>
 
 </div>
 
-<!-- Fim Modal -->
+</div>
 
-<!-- Inicio Footer -->
 <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
 <button 
 class="flex items--center gap-2 text-white font-bold"
 id="cart-btn">
-    (<span id="cart-count">
-        0
-    </span>)
-    veja meu Carrinho
-    <i class="fa fa-cart-plus text-lg text-white"></i>
+(<span id="cart-count">
+    0
+</span>)
+veja meu Carrinho
+<i class="fa fa-cart-plus text-lg text-white"></i>
 </button>
 </footer>
 
-<!-- Fim Footer -->
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="script.js"></script>
 

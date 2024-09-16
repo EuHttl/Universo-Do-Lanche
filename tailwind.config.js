@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        "fundo": "url('/assets/pexels-krisof-1252890.jpg')"
+        "fundo": "url('/assets/pexels-francesco-ungaro-998641.jpg')"
       }
     },
   },

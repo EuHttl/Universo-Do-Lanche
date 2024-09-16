@@ -10,6 +10,10 @@ const addressInput = document.getElementById("address")
 const addressWarn = document.getElementById("address-warn")
 
 
+function debug(e){
+    console.log("" + e.type);
+}
+
 let cart = [];
 
 // Abrir o Carrinho
@@ -130,7 +134,7 @@ function removeItemCart(name){
 
 }
 
-adressInput.addEventListener("input", function(event){
+addressInput.addEventListener("input", function(event){
     let inputValue = event.target.value;
 
     if(inputValue !== ""){
@@ -188,7 +192,7 @@ checkoutBtn.addEventListener("click", function(){
 function checkFuncionamento(){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 8 && hora < 23;
+    return hora >= 18 && hora < 24;
 }
 
 const spanItem = document.getElementById("date-span")
