@@ -27,13 +27,13 @@ cartBtn.addEventListener("click", function() {
 // Fechar o Carrinho
 cartModal.addEventListener("click", function(event){
 if(event.target === cartModal){
-cartModal.style.display = "none"
+cartModal.style.display = "none";
 }
 })
 
 // Fechar pelo button
 closeModalBtn.addEventListener("click", function(){
-cartModal.style.display = "none"
+cartModal.style.display = "none";
 })
 
 menu.addEventListener("click", function(event){
