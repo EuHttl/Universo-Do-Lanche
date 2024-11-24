@@ -108,7 +108,7 @@ cartItemContainer.addEventListener("click", function(event){
     if(event.target.classList.contains("remove-btn")){
         const name = event.target.getAttribute("data-name")
 
-        removeItem(name);
+        removeItemCart(name);
     }
 })
 
@@ -169,7 +169,6 @@ checkoutBtn.addEventListener("click", function(){
         return;
     }
 
-    // Enviar o pedido para o wpp
 
     const cartItems = cart.map((item) => {
         return (
@@ -197,8 +196,8 @@ const isOpen = checkFuncionamento();
 
 if(isOpen){
     spanItem.classList.remove("bg-red-500");
-    spanItem.classList.add("bg-blue-600")
+    spanItem.classList.add("bg-blue-700")
 }else{
-    spanItem.classList.remove("bg-blue-600")
+    spanItem.classList.remove("bg-blue-700")
     spanItem.classList.add("bg-red-500")
 }
