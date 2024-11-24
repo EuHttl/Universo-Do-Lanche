@@ -16,22 +16,19 @@ function debug(e){
 
 let cart = [];
 
-// Abrir o Carrinho
 cartBtn.addEventListener("click", function() {
 
     updateCartModal();
     cartModal.style.display = "flex"
 })
 
-
-// Fechar o Carrinho
 cartModal.addEventListener("click", function(event){
 if(event.target === cartModal){
 cartModal.style.display = "none";
 }
 })
 
-// Fechar pelo button
+
 closeModalBtn.addEventListener("click", function(){
 cartModal.style.display = "none";
 })
@@ -48,7 +45,6 @@ addToCart(name, price)
 }
 })
 
-// Adicionar ao carrinho
 function addToCart(name, price){
 
 const existingItem = cart.find(item => item.name === name)
@@ -107,7 +103,7 @@ cartCounter.innerHTML = cart.length;
 
 }
 
-// Função de remover
+
 cartItemContainer.addEventListener("click", function(event){
     if(event.target.classList.contains("remove-btn")){
         const name = event.target.getAttribute("data-name")
@@ -119,7 +115,7 @@ cartItemContainer.addEventListener("click", function(event){
 function removeItemCart(name){
     const index = cart.findIndex(item => item.name === name);
 
-    if(index != -1) {
+    if(index !== -1) {
         const item = cart[index];
 
         if(item.qtd > 1){
@@ -127,6 +123,7 @@ function removeItemCart(name){
             updateCartModal();
             return;
         }
+        
         cart.splice(index, 1);
         updateCartModal();
 
