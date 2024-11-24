@@ -36,7 +36,7 @@ class="w-32 h-32 rounded-full shadow-lg hover:scale-110">
 
 <span class="text-white font-medium">Avenida Europa, 1458, Jardim Santa Julia, Itanhaém</span>
 
-<div class="bg-blue-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+<div class="bg-blue-700 px-4 py-1 rounded-lg mt-5" id="date-span">
 <span class="text-white font-medium">Quarta às Segunda - 18:00 às 23:00</span>
 </div>
 </div>
@@ -395,27 +395,27 @@ Conheça o cardápio
 
 <!-- Modal -->
 <div 
-class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" 
+class="bg-black/50 bg w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" 
 id="cart-modal">
 <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-<h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+<h2 class="text-center font-bold text-2xl mb-2 text-black">Meu carrinho</h2>
 
 <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
 
-<p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+<p class="font-bold text-black">Total: <span id="cart-total">0,00</span></p>
 
-<p class="font-bold mt-4">Endereço de Entrega:</p>
+<p class="font-bold mt-4 text-black">Endereço de Entrega:</p>
 
 <input type="text"
 placeholder="Digite seu endereço"
 id="address"
-class="w-full border-2 p-1 rounded my-1"
+class="w-full border-2 p-1 rounded my-1 text-black"
 >
 <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!</p>
 
 <div class="flex items-center justify-between mt-5 w-full">
 <button id="close-modal-btn">Fechar</button>
-<button id="checkout-btn" class="bg-green-600 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+<button id="checkout-btn" class="bg-purple-700 text-white px-4 py-1 rounded">Finalizar Pedido</button>
 </div>
 
 </div>
