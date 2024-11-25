@@ -195,9 +195,9 @@ const spanItem = document.getElementById("date-span")
 const isOpen = checkFuncionamento();
 
 if(isOpen){
-    spanItem.classList.remove("bg-red-500");
-    spanItem.classList.add("bg-blue-700")
+    spanItem.classList.remove("bg-red-800");
+    spanItem.classList.add("bg-purple-700");
 }else{
-    spanItem.classList.remove("bg-blue-700")
-    spanItem.classList.add("bg-red-500")
+    spanItem.classList.remove("bg-purple-700");
+    spanItem.classList.add("bg-red-800");
 }

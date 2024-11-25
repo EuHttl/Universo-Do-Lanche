@@ -11,10 +11,10 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        "fundo": "url('/assets/bg-space.jpg')"
+        "fundo": "url('/assets/bg-space.jpg')",
+        "space": "url('/assets/space.jpg')",
       }
-    },
   },
   plugins: [],
 }
-
+}

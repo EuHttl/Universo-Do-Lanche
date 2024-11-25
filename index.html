@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="bg-black text-white">
+<body class="bg-space bg-cover bg-center text-white">
 
 <!-- HEADER -->
 <header class="w-full h-[420px] bg-zinc-900 bg-fundo bg-cover bg-center">
@@ -37,8 +37,8 @@ class="w-32 h-32 rounded-full shadow-lg hover:scale-110">
 
 <span class="text-white font-medium">Avenida Europa, 1458, Jardim Santa Julia, Itanhaém</span>
 
-<div class="bg-blue-700 px-4 py-1 rounded-lg mt-5" id="date-span">
-<span class="text-white font-medium">Quarta às Segunda - 18:00 às 23:00</span>
+<div class="bg-purple-700 px-4 py-1 rounded-lg mt-5" id="date-span">
+<span class="text-white font-medium">Quarta a Domingo - 18:00 às 23:00</span>
 </div>
 </div>
 </header>
@@ -48,117 +48,65 @@ Conheça o cardápio
 </h2>
 
 <div id="menu">
-
-    <h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-6">
-        Batatas Fritas
-    <h2>
-
-<main class="grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-20 mx-auto max-w-7xl px-3 mb-16">
     
-<div class="flex gap-2">
-    <img src="./assets/images/fries/Batata_Completa.png" 
-    alt="fries"
-    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-        
-    <div>
-        <p class="font-bold">Batata Frita Completa Grande</p>
-        <p class="text-sm">A combinação perfeita: Aprox. 800g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
-        <span class="gap-4 text-xs">Serve até 4 pessoas</span>
-        <i class="fa-solid fa-users text-xs"></i>
-           
-            
+    <h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">Hot-Dogs</h2>
 
-        <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 40,00</p>
-            <button 
-                class="bg-purple-700 px-5 rounded add-to-cart-btn"
-                data-name="Batata Frita Completa Grande"
-                data-price="40">
+<div class= "grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-
-    </div>
-</div>
-
-
-<div class="flex gap-2">
-    <img src="./assets/images/fries/Batata_Completa.png"
-    alt="fries"
+<div class="flex gap-2 w-full">
+    <img src="./assets/images/hotdog/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg"
+    alt="HotDog"
     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
-    <div>
-        <p class="font-bold">Batata Frita Completa Média</p>
-        <p class="text-sm">A combinação perfeita: Aprox. 500g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
-        <span class="gap-4 text-xs">Serve até 2 pessoas</span>
-        <i class="fa-solid fa-user-group text-xs"></i>
-
-
-        <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 27,00</p>
-            <button
-                class="bg-purple-700 px-5 rounded add-to-cart-btn"
-                data-name="Batata Frita Completa Média"
-                data-price="27">
-
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-
-    </div>
-
-</div>
-
-
-<div class="flex gap-2">
-    <img src="./assets/images/fries/Batata_Completa.png"
-    alt="fries"
-    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-    <div>
-        <p class="font-bold">Batata Frita Completa Pequena</p>
-        <p class="text-sm">A combinação perfeita: Aprox. 250g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
+    <div class="w-full">
+        <p class="font-bold">Hot-Dog Simples</p>
+        <p class="text-sm">Um Hot-Dog simples com salsicha, purê de batata, mostarda, ketchup, maionese e batata palha crocante. Sabor e textura em cada mordida!</p>
         <span class="gap-4 text-xs">Serve até 1 pessoa</span>
         <i class="fa-solid fa-user text-xs"></i>
-        
-
+    
         <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 15,00</p>
+            <p class="font-bold text-lg">R$ 12,00</p>
             <button
             class="bg-purple-700 px-5 rounded add-to-cart-btn"
-            data-name="Batata Frita Completa Pequena"
-            data-price="15">
-
+            data-name="Hot Dog Simples"
+            data-price="12">
+        
             <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
         </div>
     </div>
 </div>
 
+</div>
+
+    <h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-6">
+        Batatas Fritas
+    <h2>
+
+<main class="grid grid-cols-1 md:grid-cols-2 gap-9 md:gap-20 mx-auto max-w-7xl px-3 mb-16">
 
 <div class="flex gap-2">
-    <img src="./assets/images/fries/Batata.png"
-    alt="fries"
-    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-    <div>
-        <p class="font-bold">Batata Frita Grande</p>
-        <p class="text-sm">Classicas e irresistíveis! Aprox. 800g de batatas fritas crocantes e no ponto certo.</p>
-        <span class="gap-4 text-xs">Serve até 4 pessoas</span>
-        <i class="fa-solid fa-users text-xs"></i>
-            
-        <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 30,00</p>
-            <button
-                class="bg-purple-700 px-5 rounded add-to-cart-btn"
-                data-name="Batata Frita Grande"
-                data-price="30">
-
-                <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
+        <img src="./assets/images/fries/Batata.png"
+        alt="fries"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+    
+        <div>
+            <p class="font-bold">Batata Frita Pequena</p>
+            <p class="text-sm">Classicas e irresistíveis! Aprox. 250g de batata frita crocantes e no ponto certo.</p>
+            <span class="gap-4 text-xs">Serve até 1 pessoa</span>
+            <i class="fa-solid fa-user text-xs"></i>
+    
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 10,00</p>
+                <button
+                    class="bg-purple-700 px-5 rounded add-to-cart-btn"
+                    data-name="Batata Frita Pequena"
+                    data-price="10">
+    
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
         </div>
-    </div>
 </div>
 
 <div class="flex gap-2">
@@ -191,17 +139,17 @@ Conheça o cardápio
     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
     <div>
-        <p class="font-bold">Batata Frita Pequena</p>
-        <p class="text-sm">Classicas e irresistíveis! Aprox. 250g de batata frita crocantes e no ponto certo.</p>
-        <span class="gap-4 text-xs">Serve até 1 pessoa</span>
-        <i class="fa-solid fa-user text-xs"></i>
-
+        <p class="font-bold">Batata Frita Grande</p>
+        <p class="text-sm">Classicas e irresistíveis! Aprox. 800g de batatas fritas crocantes e no ponto certo.</p>
+        <span class="gap-4 text-xs">Serve até 4 pessoas</span>
+        <i class="fa-solid fa-users text-xs"></i>
+            
         <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 10,00</p>
+            <p class="font-bold text-lg">R$ 30,00</p>
             <button
                 class="bg-purple-700 px-5 rounded add-to-cart-btn"
-                data-name="Batata Frita Pequena"
-                data-price="10">
+                data-name="Batata Frita Grande"
+                data-price="30">
 
                 <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
@@ -209,10 +157,90 @@ Conheça o cardápio
     </div>
 </div>
 
+<div class="flex gap-2">
+    <img src="./assets/images/fries/Batata_Completa.png"
+    alt="fries"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+    <div>
+        <p class="font-bold">Batata Frita Completa Pequena</p>
+        <p class="text-sm">A combinação perfeita: Aprox. 250g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
+        <span class="gap-4 text-xs">Serve até 1 pessoa</span>
+        <i class="fa-solid fa-user text-xs"></i>
+        
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 15,00</p>
+            <button
+            class="bg-purple-700 px-5 rounded add-to-cart-btn"
+            data-name="Batata Frita Completa Pequena"
+            data-price="15">
+
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="flex gap-2">
+    <img src="./assets/images/fries/Batata_Completa.png"
+    alt="fries"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+    <div>
+        <p class="font-bold">Batata Frita Completa Média</p>
+        <p class="text-sm">A combinação perfeita: Aprox. 500g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
+        <span class="gap-4 text-xs">Serve até 2 pessoas</span>
+        <i class="fa-solid fa-user-group text-xs"></i>
+
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 27,00</p>
+            <button
+                class="bg-purple-700 px-5 rounded add-to-cart-btn"
+                data-name="Batata Frita Completa Média"
+                data-price="27">
+
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="flex gap-2">
+    <img src="./assets/images/fries/Batata_Completa.png" 
+    alt="fries"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        
+    <div>
+        <p class="font-bold">Batata Frita Completa Grande</p>
+        <p class="text-sm">A combinação perfeita: Aprox. 800g de batatas crocantes, cheddar e Catupiry cremoso e bacon dourado. Difícil resistir!</p>
+        <span class="gap-4 text-xs">Serve até 4 pessoas</span>
+        <i class="fa-solid fa-users text-xs"></i>
+           
+            
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 40,00</p>
+            <button 
+                class="bg-purple-700 px-5 rounded add-to-cart-btn"
+                data-name="Batata Frita Completa Grande"
+                data-price="40">
+
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+
+    </div>
+</div>
+
 </main>
 
-<h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">Anéis de Cebola
-<h2>
+    <h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">
+        Anéis de Cebola
+    <h2>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
@@ -295,7 +323,7 @@ Conheça o cardápio
 </div>
 
 </div>
-<!-- Bebidas -->
+
 <div class="mx-auto max-w-7xl px-2 my-2">
     <h2 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">
         Bebidas
@@ -357,44 +385,8 @@ Conheça o cardápio
 
 </div>
 
-<h3 class="mx-auto max-w-7xl font-bold px-2 my-2 mb-4">Hot-Dogs</h3>
-
-<div class= "grid grid-cols-1 md:grid-cols-1 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
-
-<div class="flex gap-2 w-full">
-    <img src="./assets/images/hotdog/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa.jpg"
-    alt="HotDog"
-    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-    <div class="w-full">
-        <p class="font-bold">Hot-Dog Simples</p>
-        <p class="text-sm">Um Hot-Dog simples com salsicha, purê de batata, mostarda, ketchup, maionese e batata palha crocante. Sabor e textura em cada mordida!</p>
-        <span class="gap-4 text-xs">Serve até 1 pessoa</span>
-        <i class="fa-solid fa-user text-xs"></i>
-    
-        <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 12,00</p>
-            <button
-            class="bg-purple-700 px-5 rounded add-to-cart-btn"
-            data-name="Hot Dog Simples"
-            data-price="12">
-        
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-            </button>
-        </div>
-    </div>
 </div>
 
-</div>
-
-</div>
-
-<!-- Fim Grid de Bebidas -->
-
-</div>
-<!-- Fim do Menu -->
-
-<!-- Modal -->
 <div 
 class="bg-black/50 bg w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" 
 id="cart-modal">
@@ -427,14 +419,13 @@ class="w-full border-2 p-1 rounded my-1 text-black"
 <button 
 class="flex items--center gap-2 text-white font-bold"
 id="cart-btn">
+<i class="fa-solid fa-rocket text-lg text-white"></i>
+Meu Carrinho
 (<span id="cart-count">
 0
 </span>)
-Meu Carrinho
-<i class="fa fa-cart-plus text-lg text-white"></i>
 </button>
 </footer>
-
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="script.js"></script>
